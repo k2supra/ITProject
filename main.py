@@ -3,7 +3,7 @@ name = input("Enter the name of your file") ####2222####
 directory = str(input("Enter the path where you want to save your file->"))
 
 csv_columns = ['No','Product','Category','Amount','About','Price','Shop/s'] ########3333333333##########
-dict_data = [
+dict_data1 = [
 {'No': 1, 'Product': 'Car', 'Category': 'Transport', 'Amount': '3', 'About': 'Fast indian car', 'Price': '1000$'},
 {'No': 2, 'Product': 'Cooler', 'Category': 'House thing', 'Amount': '1', 'About': 'Plastic chinese thing', 'Price': '150$'},
 {'No': 3, 'Product': 'Refrigerator', 'Category': 'House thing', 'Amount': '2', 'About': 'Refrigerator', 'Price': '6000$'},
@@ -16,7 +16,7 @@ try:
     with open(csv_file, 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()
-        for data in dict_data:
+        for data in dict_data1:
             writer.writerow(data)
 
     with open(csv_file, 'r', newline="") as file:
