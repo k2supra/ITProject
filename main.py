@@ -1,6 +1,4 @@
 
-
-
 import csv
 import re
 try:
@@ -70,4 +68,3 @@ try:
 
 except IOError as ex:
     print(f"I/O error::{ex}")
-
