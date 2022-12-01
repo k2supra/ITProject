@@ -11,6 +11,16 @@ dict_data1 = [
 {'No': 5, 'Product': 'Stickers', 'Category': 'For kids', 'Amount': '1', 'About': 'Stickers "Hello Kitty"', 'Price': '9700$'},
 {'No': 6, 'Product': 'TV', 'Category': 'Multimedia', 'Amount': '5', 'About': 'Colored TV', 'Price': '9300$'},
 ]
+
+#csv_columns1 = ['No','Product','Category','Amount','About','Price','Shop/s']
+#dict_data2 = [
+{'No': 1, 'Product': 'Car helmet', 'Category': 'Safety', 'Amount': '2', 'About': 'Great chinese helmet', 'Price': '800$'},
+{'No': 2, 'Product': 'Cool water', 'Category': 'Food', 'Amount': '1', 'About': 'For Africa', 'Price': '610$'},
+{'No': 3, 'Product': 'Thor', 'Category': 'Idk', 'Amount': '4', 'About': 'For fun =)', 'Price': '1000$'},
+{'No': 4, 'Product': 'Mouse PC.', 'Category': 'PC accessory', 'Amount': '5', 'About': 'PC`s', 'Price': '70$'},
+{'No': 5, 'Product': 'Snickers', 'Category': 'Food', 'Amount': '4', 'About': 'Stickers "Tasty"', 'Price': '8060$'},
+{'No': 6, 'Product': 'Radio', 'Category': 'Multimedia', 'Amount': '8', 'About': 'NASA`s radio', 'Price': '900$'},
+#]
 csv_file = (directory + "\\" + name + ".csv") ####2222####
 try:
     with open(csv_file, 'w') as csvfile:
@@ -18,6 +28,7 @@ try:
         writer.writeheader()
         for data in dict_data1:
             writer.writerow(data)
+
 
     with open(csv_file, 'r', newline="") as file:
         reader = csv.reader(file)
